@@ -92,7 +92,6 @@ const CartSumary: FC = props => {
 
   return (
     <>
-      <p>{JSON.stringify(order)}</p>
       <Card padding="16px" className="m-b-4">
         <StyleCartSumary {...props}>
           <tbody>
