@@ -128,7 +128,7 @@ function createApolloClient(initialState = {}) {
     connectToDevTools: isBrowser,
     ssrMode: !isBrowser, // Disables forceFetch on the server (so queries are only run once)
     link: new HttpLink({
-      uri: process.env.BACKEND_URL || 'http://localhost:4000', // Server URL (must be absolute)
+      uri: 'https://riqra-challenge-back.herokuapp.com', // Server URL (must be absolute)
       credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
       // Use fetch() polyfill on the server
       fetch: !isBrowser ? fetch : undefined,
